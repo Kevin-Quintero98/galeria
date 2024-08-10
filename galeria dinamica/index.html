@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Dinámica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail" onclick="openModal('imagenes/imagen1.jpg')">
+            <img src="imagenes/imagen1.jpg" alt="Imagen 1">
+        </div>
+        <div class="thumbnail" onclick="openModal('imagenes/imagen2.jpg')">
+            <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+        </div>
+        <div class="thumbnail" onclick="openModal('imagenes/imagen3.jfif')">
+            <img src="imagenes/imagen3.jfif" alt="Imagen 3">
+        </div>
+        <div class="thumbnail" onclick="openModal('imagenes/imagen4.jpg')">
+            <img src="imagenes/imagen4.jpg" alt="Imagen 4">
+        </div>
+        <div class="thumbnail" onclick="openModal('imagenes/imagen5.avif')">
+            <img src="imagenes/imagen5.avif" alt="Imagen 5">
+        </div>
+        <div class="thumbnail" onclick="openModal('imagenes/imagen6.jfif')">
+            <img src="imagenes/imagen6.jfif" alt="Imagen 6">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-content" src="" alt="Imagen Grande">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
